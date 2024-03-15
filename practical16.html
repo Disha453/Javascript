@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg); background-size: cover;">
+    <div style="display: flex; flex-direction: column; ">
+        <div style="display: flex; text-align: center;align-items: center ;flex-direction: column; margin-top: 100px;">
+            <div>
+                <label for="firstname"> First name:</label><br>
+                <input type="text" id="firstname" name="firstname"
+                    style=" height: 30px; width: 150px; border-radius: 50px;">
+
+            </div>
+            <br>
+
+            <div>
+                <label for="lastname"> last name:</label><br>
+                <input type="text" id="lastname" name="lastname"
+                    style=" height: 30px; width: 150px; border-radius: 50px;">
+
+            </div>
+            <br>
+            <div>
+                <label for="age"> age:</label><br>
+                <input type="number" id="age" name="age" style=" height: 30px; width: 150px; border-radius: 50px;">
+
+            </div>
+            <br>
+            <div>
+                <label for="range"> range</label><br>
+                <input type="range" id="range" name="range">
+            </div>
+            <br>
+            <div>
+                <label for="color">color:</label><br>
+                <input type="color" id="color" name="color">
+            </div>
+            <br>
+            <div>
+                <label for="subject"> subject:</label><br>
+                <input type="text" id="subject" name="subject"
+                    style=" height: 30px; width: 150px; border-radius: 50px;">
+            </div>
+            <br>
+            <br>
+
+            <div style="width: 200px; display: flex; justify-content: center;  align-items:center; height: 50px;">
+                <button onclick="disply()">submit</button>
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <input type="search" id="search" name="search" value="" style="height: 35px; margin-top: 4%;" />
+                <button onclick="searchData()"
+                    style="background-color: thistle; height: 30px; width: 100px; margin-top: 5%;">
+                    search</button>
+            </div>
+        </div>
+    </div>
+
+<div style="display: flex; justify-content: center;">
+    <table id="myTable" style="margin-top: 3%;  text-align: center;">
+
+        <thead>
+            <th>
+                first name <button onclick="sortTable()">sort</button></th>
+            <th>last name <button onclick="sortTable1()">sort</button></th>
+            <th>age<button onclick="sortTable2()">sort</button></th>
+            <th>range <button onclick="sortTable3()">sort</button></th>
+            <th>color <button onclick="sortTable4()">sort</button></th>
+            <th>subject <button onclick="sortTable5()">sort</button></th>
+        </thead>
+
+        <tbody id="s">
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+    <script src="./practical16.js"></script>
+</body>
+
+</html>

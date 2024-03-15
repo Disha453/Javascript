@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid rgb(143, 92, 92);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://marketplace.canva.com/EAFJebotzdY/1/0/1600w/canva-beige-floral-minimalist-linktree-background-Jr6vl3hxUDw.jpg);">
+
+    <div style="display: flex; justify-content: center; margin-top: 100px;">
+        <div style="display: flex; justify-content: center; text-align: center; flex-direction: column;">
+            <div style="display: flex; flex-direction: column;">
+
+                <label for="firstname"> Firstname:</label>
+                <input type="text" id="firstname" name="first name" /><br>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <lable for="lastname"> Last name:</lable>
+                <input type="text" id="lastname" name="last name"> <br>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <lable for="password"> Password:</lable>
+                <input type="password" id="password"><br>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <label for="dob">Dob:</label>
+                <input type="dob" name="dob" id="dob"><br>
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <lable for="age"> Age:</lable>
+                <input type="number" name="number" id="age"><br>
+            </div>
+
+
+            <button onclick="display()" style="background-color: thistle; height: 30px; width: 100px; margin-left: 35px;"> submit</button>
+
+
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <button onclick="sortTable()" style="background-color: thistle; height: 30px; width: 100px; margin-top: 5%;">
+            sort</button>
+
+
+        <input type="search" id="search" name="search" value="" style="height: 30px ; width: 250px; margin-top: 5%;" />
+        <button onclick="searchData()" style="background-color: thistle; height: 30px; width: 100px; margin-top: 5%;">
+            search</button>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <table id="myTable">
+
+            <thead>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>password</th>
+                <th>dob</th>
+                <th>age</th>
+            </thead>
+            <tbody id="f">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./practical12.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://imgv3.fotor.com/images/gallery/feature-background-gallery-marble-ink-5.jpg);background-size: cover;">
+
+
+
+    <div style="display: flex; flex-direction: column; text-align: center; margin-top: 3%;">
+        <div style="font-size: 40px;">
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" id="firstname" value="" placeholder="firstname"
+                style="height: 50px; width: 20%; border-radius: 7px;">
+        </div>
+
+        <div style="margin-top: 3%; font-size: 40px;">
+            <label for="lastname">Lastname:</label>
+            <input type="lastname" name="lastname" id="lastname" value="" placeholder="lastname"
+                style="height: 50px; width: 20%; border-radius: 7px;">
+        </div>
+
+
+        <div style="margin-top: 3%; font-size: 40px;">
+            <lable for="age">Age:</iable>
+                <input type="number" name="age" id="age" value="" placeholder="age"
+                    style="height: 50px; width: 20%; border-radius: 7px;">
+        </div>
+
+
+        <div style="margin-top: 3%; font-size: 40px;">
+            <label for="tel">Number:</label>
+            <input type="tel" name="tel" id="tel" value="" placeholder="number"
+                style="height: 50px; width: 20%; border-radius: 7px;">
+
+        </div>
+
+
+        <div style="margin-top: 3%; font-size: 40px;">
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+<div style="display: flex; justify-content: center;">
+        <button onclick="display()"
+            style="height: 50px; width: 5%; border-radius: 7px; margin-top: 3%;  align-items: center;">submit</button>
+        </div>
+    </div>
+
+
+
+<div style="display: flex; justify-content: center;">
+    <table style="margin-top: 3%; padding: 8px; ">
+        <thead>
+            <th>
+                first name</th>
+            <th>last name </th>
+            <th>age</th>
+            <th>number</th>
+            <th>color</th>
+
+        </thead>
+
+        <tbody id="s">
+
+        </tbody>
+    </table>
+</div>
+    <!-- light & dark word -->
+    <div style="display: flex; gap: 5px;">
+        <h4 id="d"></h4>
+        <h4 id="f" style="font-weight: bold;color: rgb(0, 119, 255);"></h4>
+    </div>
+
+
+    <!-- last latter for colorful -->
+    <div style="display: flex;">
+        <h4 id="hello"></h4>
+        <h4 id="hello1" style="color: red;"></h4>
+
+    </div>
+
+    <script src="./practical26.js"></script>
+</body>
+
+</html>

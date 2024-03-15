@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sorting</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            margin-top: 3%;
+            border-radius: 5px;
+            padding: 7px;
+        }
+    </style>
+
+</head>
+
+<body
+    style="background-image: url(https://marketplace.canva.com/EAFvhKTI9I8/1/0/400w/canva-pink-watercolor-linktree-background-qoHDNUYOTgU.jpg); background-size: cover;">
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;  margin-top: 8%;">
+
+        <div>
+            <label for="fullname"><B>Fullname:</B></label>
+            <input type="text" id="fullname" name="fullname" placeholder="fullname"
+                style="border-radius: 4px; height: 30px;">
+        </div>
+
+        <div style="margin-top: 3%;">
+            <label for="lastname"><B>Lastname:</B></label>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname"
+                style="border-radius: 4px; height: 30px;">
+        </div>
+
+
+        <div style="margin-top: 3%;">
+            <lable for="email"><B>Email:</B></lable>
+            <input type="email" id="email" name="email" placeholder="email" style="border-radius: 4px; height: 30px;">
+        </div>
+
+
+        <button onclick="display() "
+            style="background-color: #c544ad; color: white; border-radius: 8px ; width: 80px; margin-top: 3%; height: 35px; width: 90px; ">submit</button>
+
+
+        <div style="display: flex; gap: 8%; margin-top: 5%;">
+            <button onclick="sortTable()"
+                style="margin-top: 3%;  background-color: #c544ad; color: white; border-radius: 8px ; width: 80px; height: 35px;">sort</button>
+
+
+
+            <th
+                style="background-color: #c544ad; color: white; ; width: 80px; margin-top: 3%; height: 30px; width: 90px; ">
+                <select id="h" style="background-color: #c544ad; color: white;  border-radius: 10px">
+                    <option value="x">Fullname</option>
+                    <option value="y">Lastname</option>
+                    <option value="z">Email</option>
+                </select>
+            </th>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="display: flex; flex-direction: column;  align-items: center; margin-top: 5%;">
+        <table>
+            <thead>
+                <th>fullname</th>
+                <th>lastname</th>
+                <th>email</th>
+            </thead>
+
+            <tbody id="s"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src="./sort button .js"></script>
+</body>
+
+</html>

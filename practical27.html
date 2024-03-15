@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            margin-top: 3%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(https://images.rawpixel.com/image_300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y1NDZiYXRjaDMtbXludC0zMS1iYWRnZXdhdGVyY29sb3JfMS5qcGc.jpg); background-size: cover;">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ;">
+        <div>
+            <label for="fullname">Fullname:-</label>
+            <input type="text" id="fullname" name="fullname" placeholder="fullname">
+        </div>
+
+        <div style="margin-top: 3%;">
+            <label for="lastname">Lastname:-</label>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname">
+        </div>
+
+        <div style="margin-top: 3%;">
+            <label for="age">Age:-</label>
+            <input type="age" id="age" name="age" placeholder="age">
+        </div>
+
+        <div style="margin-top: 3%;">
+            <lable for="email">Email:-</lable>
+            <input type="email" id="email" name="email" placeholder="email">
+        </div>
+
+        <button onclick="display()"
+            style="background-color: #e0c0b4; color: white; border-radius: 8px ; width: 8%; height: 50px; margin-top: 3%;color: black; ">submit</button>
+    </div>
+
+
+
+<div style="display: flex; justify-content: center;">
+    <table>
+        <thead>
+            <th>fullname</th>
+            <th>lastname</th>
+            <th>age</th>
+            <th>email</th>
+        </thead>
+        <tbody id="s"></tbody>
+    </table>
+</div>
+    <script src="./practical27.js"></script>
+</body>
+
+</html>

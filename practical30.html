@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>task</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            background-color: rgb(236, 232, 227);
+            font-family: cursive
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center ;gap: 20PX;">
+        <div>
+            <label for="StudentName">StudentName:</label>
+            <input type="text" id="StudentName" name="StudentName" value="" required>
+        </div>
+        <div>
+            <label for="StudentRollno">StudentRollno:</label>
+            <input type="text" id="StudentRollno" name="StudentRollno" value="">
+        </div>
+        <div>
+            <label for="Subject">Subject:</label>
+            <input type="text" id="Subject" name="Subject" value="">
+        </div>
+        <div>
+            <label for="Course"> Course: </label>
+            <select id="Course">
+                <option value="BBA"> BBA </option>
+                <option value="BCA"> BCA </option>
+                <option value="B.A"> B.A </option>
+                <option value="B.VOC"> B.VOC </option>
+                <option value="B.COM"> B.COM </option>
+            </select>
+        </div>
+        <div>
+            <label for="SchoolName"> SchoolName: </label>
+            <select id="SchoolName">
+                <option value="SchoolName1"> School Name 1 </option>
+                <option value="SchoolName2"> School Name 2 </option>
+                <option value="SchoolName3"> School Name 3 </option>
+            </select>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 2%;">
+        <button onclick="display()">submit</button>
+    </div>
+    <div style="display: flex;  justify-content: center;gap: 4%;margin-top: 5%;">
+        <div>
+            <table>
+                <thead>
+                    <th>StudentName</th>
+                    <th>StudentRollno</th>
+                    <th>Subject</th>
+                    <th>Course</th>
+                    <th>SchoolName</th>
+
+                </thead>
+                <tbody id="1"></tbody>
+            </table>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>StudentName</th>
+                    <th>StudentRollno</th>
+                    <th>Subject</th>
+                    <th>Course</th>
+                    <th>SchoolName</th>
+
+                </thead>
+                <tbody id="2"></tbody>
+            </table>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>StudentName</th>
+                    <th>StudentRollno</th>
+                    <th>Subject</th>
+                    <th>Course</th>
+                    <th>SchoolName</th>
+                </thead>
+                <tbody id="3"></tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="./practical30.js"></script>
+</body>
+
+</html>

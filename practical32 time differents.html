@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <!-- YEAR differents -->
+    <div style="display: flex; flex-direction: column; gap: 3px; align-items: center;">
+        <label for="year">year 1:</label>
+        <input type="year" id="year1" name="year1" value="">
+
+
+        <label for="year">year 2:</label>
+        <input type="year" id="year2" name="year2" value="">
+
+        <button type="button" style="margin-top: 3%;" onclick="year()"> submit</button>
+
+    </div>
+
+
+    <!-- time differents -->
+    <div style="display: flex; flex-direction: column; gap: 3px; align-items: center;">
+        <label for="time">time 1:</label>
+        <input type="time" id="time1" name="time1" value="">
+
+
+        <label for="time">time 2:</label>
+        <input type="time" id="time2" name="time2" value="">
+
+        <button type="button" style="margin-top: 3%;" onclick="time()"> submit</button>
+
+    </div>
+
+    <!-- date differents -->
+    <div style="display: flex; flex-direction: column; gap: 3px; align-items: center; margin-top: 3%;">
+        <label for="date1">date 1:</label>
+        <input type="date" id="date1" name="date1" value="">
+
+
+        <label for="date2">date 2:</label>
+        <input type="date" id="date2" name="date2" value="">
+
+
+        <button type="button" style="margin-top: 3%;" onclick="date()"> submit</button>
+
+    </div>
+
+    <!-- days into con. years -->
+    <div style="display: flex; flex-direction: column; gap: 3px; align-items: center; margin-top: 3%;">
+
+        <label for="day">day:</label>
+        <input type=" number" id="day" name="day" value="">
+
+        <button type="button" style="margin-top: 3%;" onclick="days()"> submit</button>
+
+    </div>
+
+
+
+    <!-- date into con. age -->
+
+    <div style="display: flex; flex-direction: column; gap: 3px; align-items: center; margin-top: 3%;">
+
+        <label for="date3">age:</label>
+        <input type="date" id="date3" name="date" value="">
+
+        <button type="button" style="margin-top: 3%;" onclick="age()"> submit</button>
+
+
+
+
+
+
+        <div>
+            <p class="title">Date</p>
+            <input type="text" name="datee" id="datee" placeholder="dd" required="required" minlength="1" maxlength="2">
+        </div>
+        <div>
+            <p class="title">Month</p>
+            <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2">
+        </div>
+        <div>
+            <p class="title">Year</p>
+            <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4">
+        </div>
+        <button type="button" style="margin-top: 3%;" onclick="Age()"> submit</button>
+
+
+        
+    </div>
+
+
+
+    <script src="practical32  time differents.js"></script>
+</body>
+
+</HTML>

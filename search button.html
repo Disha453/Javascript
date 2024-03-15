@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(81, 68, 222);">
+    <div style="display: flex; align-items: center; justify-content: center;margin-top: 150px;">
+
+        <div
+            style="background-color: rgb(177, 177, 241); height: 500px; width: 1000px; display: flex; align-items: center;">
+            <div style=" padding: 10%;">
+                <h1 style="color: white;"><b> Have to account?</b></h1>
+                <input type="button" value="Log in"
+                    style="background-color: transparent; height: 70px; width: 200px; border: 2px solid white; border-radius: 5px; font-size: 130%; color: white;">
+            </div>
+        </div>
+
+        <div style="background-color: white; height: 600px; width: 500px;margin-left: -550px;">
+            <div style="padding: 10%; text-align: center; margin-top: 20px; ">
+                <div>
+
+                    <input type="email" id="email" placeholder="email" name="email"
+                        style="border-radius: 8px; height: 50px ; width: 75%; padding: 10px;">
+                </div>
+                <br>
+                <div>
+
+                    <input type="password" id="password" placeholder="password" name="password"
+                        style="border-radius: 8px; height: 50px ; width: 75%; padding: 10px;">
+                </div>
+                <br>
+                <div>
+
+                    <input type="text" id="fullname" placeholder="full name" name="fullname"
+                        style="border-radius: 8px; height: 50px ; width: 75%; padding: 10px;">
+                </div>
+                <br>
+                <div>
+
+                    <input type="text" id="username" placeholder="user name" name="username"
+                        style="border-radius: 8px; height: 50px ; width: 75%; padding: 10px;">
+                </div>
+                <br>
+
+                <button onclick="display()"
+                    style="border-radius: 8px; height: 60px ; width: 55%; background-color: pink; margin-top: 5%;">submit</button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 4%; gap: 1%;">
+        <input type="search" id="search" name="search" value="" />
+
+        <button type="button" onclick="searchData()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+            
+    </div>
+    <div style="margin-top: 5%; display: flex;  justify-content: center;  ">
+
+        <table>
+            <thead>
+                <th>email<button onclick="sortTable()">sort</button></th>
+                <th>password <button onclick="sortTable1()">sort</button></th>
+                <th>fullname <button onclick="sortTable2()">sort</button></th>
+                <th>username <button onclick="sortTable3()">sort</button></th>
+            </thead>
+            <tbody id="e">
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="./search button.js"></script>
+</body>
+
+</html>

@@ -3,8 +3,6 @@ console.log("disk");
 
 let student = JSON.parse(localStorage.getItem("disk")) || []
 
-
-
 //sort button 
 //callback or arrow body function
 //sort button condition for dropdown button

@@ -39,7 +39,7 @@ const displayTable = () => {
         <td>${item.age}</td>
         <td>${item.email}</td>
         <td><button type="button" onclick = deleteRecord(${index}) style = "background-color : transparent ; border-radius: 5px"> Delete </button> </td>
-        <td> <button type = "button" onclick = aEdit(${index})  style = "background-color : transparent; border-radius: 5px">Edit </button></td>
+        <td><button type = "button" onclick = aEdit(${index})  style = "background-color : transparent; border-radius: 5px">Edit </button></td>
         <tr>`
         )
     }).join('')

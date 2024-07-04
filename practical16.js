@@ -19,11 +19,6 @@ const handleEdit = (idx) => {
     document.getElementById("subject").value = record.subject;
 }
 
-
-
-
-
-
 //delete button : splice methods
 let deleteRecord = (index) => {
     student.splice(index, 1);
@@ -53,9 +48,6 @@ const displayTable = () => {
 displayTable();
 
 
-
-
-
 function disply() {
     const firstname = document.getElementById("firstname").value;
     console.log(firstname);
@@ -78,17 +70,11 @@ function disply() {
     console.log(subject);
 
 
-
     //object
 
     const hello = {
         firstname: firstname, lastname: lastname, age: age, range: range, color: color, subject: subject
     }
-
-
-
-
-
 
     //edit button code
     if (isedit !== -1) {
@@ -118,7 +104,6 @@ const sortTable = () => {
     student = sortedData;
     displayTable()
 }
-
 
 const sortTable1 = () => {
     const sortedData = student.sort((a, b) => { return (a.lastname.localeCompare(b.lastname)) });
